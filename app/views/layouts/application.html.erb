@@ -4,13 +4,23 @@
     <title>PortforioApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= render 'layouts/shim' %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
     <h1>おいでよポートフォリオの森</h1>
+    <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+    <div class="gazou">
+    <%= link_to image_tag("atsumori.png", alt: "atsumori.png", class: "image",width: "80%"),
+                 "https://www.nintendo.co.jp/switch/acbaa/index.html" %>
+    </div>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
