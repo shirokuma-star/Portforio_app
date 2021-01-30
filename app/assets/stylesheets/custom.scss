@@ -4,6 +4,9 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$palegreen: #98fb98;
+$limegreen: #32cd32;
+$awaigreen: #81d7b4;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -15,6 +18,9 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  background-color: $awaigreen;
+  margin:0 auto;
+  width: 90%;
 }
 
 section {
@@ -36,12 +42,13 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: white;
 }
 
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -59,6 +66,10 @@ p {
   line-height: 1.7em;
 }
 
+.gazou {
+  text-align: center;
+}
+
 
 /* header */
 
@@ -66,13 +77,13 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #e1b64c;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: #f8eab4;
     text-decoration: none;
   }
 }
@@ -151,6 +162,24 @@ aside {
 }
 
 /* forms */
+
+header {
+  background-color: #146611;
+  grid-color: #0b5b07;
+}
+
+form {
+  background-color: #f8eab4;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: #146611;
+}
+
+.navbar-nav {
+}
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
