@@ -42,6 +42,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  text-align: center;
   color: white;
 }
 
@@ -174,6 +175,10 @@ form {
   margin-bottom: 30px;
 }
 
+.micropost {
+  margin-bottom: 30px;
+}
+
 .navbar {
   background-color: #146611;
 }
@@ -205,4 +210,7 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+ul {
+  list-style: none;
 }
