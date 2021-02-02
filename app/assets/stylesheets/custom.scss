@@ -20,7 +20,7 @@ body {
   padding-top: 60px;
   background-color: $awaigreen;
   margin:0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 section {
@@ -69,6 +69,16 @@ p {
 
 .gazou {
   text-align: center;
+}
+
+.row {
+  width: 80%;
+  margin:0 auto;
+}
+
+.col-md-4 {
+  width: 80%;
+  margin:0 auto;
 }
 
 
@@ -211,6 +221,16 @@ input {
     color: $state-danger-text;
   }
 }
+
 ul {
   list-style: none;
+}
+
+.user_info {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.content {
+  text-align: center;
 }
