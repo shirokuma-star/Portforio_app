@@ -1,5 +1,9 @@
 <h1>ユーザー一覧</h1>
-<!--ここにユーザー一覧の繰り返し配列-->
+
+<div class="page">
+<%= will_paginate %>
+</div>
+
 <ul class="users">
   <% @users.each do |user| %>
     <li>
@@ -7,6 +11,11 @@
     </li>
   <% end %>
 </ul>
+
+<div class="page">
+<%= will_paginate %>
+</div>
+
 <div class="center jumbotron">
     <%= link_to "TOP(ログイン)ページに戻る", login_path, class: "btn btn-lg btn-primary" %> 
 </div>

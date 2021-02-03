@@ -20,7 +20,7 @@ body {
   padding-top: 60px;
   background-color: $awaigreen;
   margin:0 auto;
-  width: 100%;
+  width: 90%;
 }
 
 section {
@@ -222,8 +222,23 @@ input {
   }
 }
 
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
 ul {
   list-style: none;
+  .users{
+    padding: 0;
+  }
 }
 
 .user_info {
@@ -233,4 +248,22 @@ ul {
 
 .content {
   text-align: center;
+}
+
+.page {
+  margin: 0 auto;
+  width: 20%;
+}
+
+ul {
+    padding-inline-start: 0px;
+    // margin-inline-end: 30px;
+}
+
+.guest {
+  margin-left: 50px;
+}
+
+.login-btn {
+  width: 50%;
 }

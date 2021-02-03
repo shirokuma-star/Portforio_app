@@ -10,7 +10,8 @@
       <%= f.label :password, "パスワード" %>
       <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.submit "ログインする", class: "btn btn-primary" %>
+      <%= f.submit "ログインする", class: "btn btn-primary login-btn" %>
+      <%= link_to 'ゲストログイン', guest_path, method: :post, class: 'btn btn-success guest' %>
     <% end %>
 
     <p class="text-center">初めてですか？ <%= link_to "新規アカウント作成", signup_path %></p>
